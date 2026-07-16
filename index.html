@@ -1,13 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>basic-calculator</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>basic-calculator</title>
+    </head>
+    <body class="flex justify-center items-center flex-wrap h-screen">
+        <div class="flex gap-2 flex-col">
+            <div
+                data-display="display"
+                class="flex justify-end border rounded-2xl h-10 items-center px-2"
+            ></div>
+            <div data-input="buttons" class="flex gap-2 flex-col">
+                <div>
+                    <button data-input="button" class="button">1</button>
+                    <button data-input="button" class="button">2</button>
+                    <button data-input="button" class="button">3</button>
+                    <button data-input="button" class="button">+</button>
+                </div>
+                <div>
+                    <button data-input="button" class="button">4</button>
+                    <button data-input="button" class="button">5</button>
+                    <button data-input="button" class="button">6</button>
+                    <button data-input="button" class="button">-</button>
+                </div>
+                <div>
+                    <button data-input="button" class="button">7</button>
+                    <button data-input="button" class="button">8</button>
+                    <button data-input="button" class="button">9</button>
+                    <button data-input="button" class="button">/</button>
+                </div>
+                <div>
+                    <button data-input="button" class="button">0</button>
+                    <button data-input="button" class="button">*</button>
+                    <button data-input="button" class="button">CE</button>
+                    <button data-input="button" class="button">=</button>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="/src/main.js"></script>
+    </body>
 </html>
